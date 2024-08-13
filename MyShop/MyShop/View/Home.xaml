@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" Title="MyShop Product Manager"
+             x:Class="MyShop.View.Home">
+    <ContentPage.Content>
+
+        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand"
+                     VerticalOptions="Center">
+            <Frame HasShadow="True">
+                <StackLayout>
+                    <Label Text="Products" TextColor="DeepPink" FontSize="Small" />
+                    <Label Text="Browse Products" TextColor="Gray"  FontSize="Small" />
+                </StackLayout>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding BrowseProductsCmd}" />
+                </Frame.GestureRecognizers>
+            </Frame>
+
+            <Frame HasShadow="True">
+                <StackLayout>
+                    <Label Text="Product categories" TextColor="DeepPink" FontSize="Small" />
+                    <Label Text="Select product categories" TextColor="Gray"  FontSize="Small" />
+                </StackLayout>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding BrowseProductsCategoryCmd}" />
+                </Frame.GestureRecognizers>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
