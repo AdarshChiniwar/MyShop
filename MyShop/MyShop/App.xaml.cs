@@ -12,6 +12,7 @@ using Xamarin.Forms.Xaml;
 
 namespace MyShop
 {
+    //developed feature 1
     public partial class App : Application
     {
         private static readonly HttpClient client = new HttpClient();
